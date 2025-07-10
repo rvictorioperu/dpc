@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Programación Curricular</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for Inter font and general body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1024px; /* Max width for content */
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 1rem; /* Rounded corners for the main container */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+            padding: 2rem;
+        }
+        /* Image hover effect */
+        .interactive-img {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 0.5rem; /* Rounded corners for images */
+        }
+        .interactive-img:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.2), 0 6px 10px -3px rgba(0, 0, 0, 0.1);
+        }
+        /* Link hover effect */
+        .interactive-link {
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .interactive-link:hover {
+            color: #4f46e5; /* A vibrant blue on hover */
+            transform: translateX(5px);
+        }
+        /* Table link styling */
+        .table-link {
+            display: block;
+            padding: 0.5rem 0;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .table-link:hover {
+            background-color: #e0e7ff; /* Light blue background on hover */
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container">
+        <!-- Header Section -->
+        <div class="flex flex-col items-center justify-center mb-8">
+            <a href="https://usil.instructure.com/courses/59080/pages/pagina-de-inicio-2-2" title="Página de Inicio" class="mb-6">
+                <img src="https://usil.instructure.com/courses/59080/files/10731161/preview" alt="Inicio del curso" class="interactive-img max-w-full h-auto" width="200" height="35" onerror="this.onerror=null;this.src='https://placehold.co/200x35/cccccc/333333?text=Inicio+del+curso';">
+            </a>
+            <div class="w-full bg-indigo-900 rounded-lg p-4 text-center shadow-md">
+                <h1 class="text-white text-3xl font-extrabold tracking-wide">DISEÑO Y PROGRAMACIÓN CURRICULAR</h1>
+            </div>
+        </div>
+
+        <!-- Units and Sessions Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Unidades y Sesiones</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Unit 1 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm hover:shadow-md interactive-img">
+                    <img src="https://usil.instructure.com/courses/59080/files/10731172/preview" alt="Unidad 1" class="w-full h-auto mb-4 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/400x69/cccccc/333333?text=Unidad+1';">
+                    <a href="https://usil.instructure.com/courses/59080/pages/s-1-s1-utility-utilidad-2" title="Sesión 1 - Semana 1" class="text-indigo-700 font-semibold text-lg hover:underline interactive-link">
+                        <img src="https://usil.instructure.com/courses/59080/files/10731151/preview" alt="Sesion 1 - semana 1" class="w-full h-auto rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/320x56/cccccc/333333?text=Sesion+1';">
+                    </a>
+                    <a href="https://usil.instructure.com/courses/59080/pages/sesion-2-semana-2-y-3-utility-utilidad-2" title="Sesión 2 - Semana 2 y 3" class="text-indigo-700 font-semibold text-lg hover:underline interactive-link mt-2">
+                        <img src="https://usil.instructure.com/courses/59080/files/10731136/preview" alt="Sesión 2" class="w-full h-auto rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/320x56/cccccc/333333?text=Sesion+2';">
+                    </a>
+                </div>
+                <!-- Unit 2 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm hover:shadow-md interactive-img">
+                    <img src="https://usil.instructure.com/courses/59080/files/10731173/preview" alt="Unidad 2" class="w-full h-auto mb-4 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/400x69/cccccc/333333?text=Unidad+2';">
+                    <a href="https://usil.instructure.com/courses/59080/pages/sesion-3-semana-4-5-y-6-utility-utilidad" title="Sesión 3 - Semana 4, 5 y 6" class="text-indigo-700 font-semibold text-lg hover:underline interactive-link">
+                        <img src="https://usil.instructure.com/courses/59080/files/10731175/preview" alt="Sesion 3" class="w-full h-auto rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/320x56/cccccc/333333?text=Sesion+3';">
+                    </a>
+                    <a href="https://usil.instructure.com/courses/59080/pages/sesion-4-semana-7-y-8-utility-utilidad" title="Sesión 4 - Semana 7 y 8" class="text-indigo-700 font-semibold text-lg hover:underline interactive-link mt-2">
+                        <img src="https://usil.instructure.com/courses/59080/files/10731177/preview" alt="Sesión 4" class="w-full h-auto rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/320x56/cccccc/333333?text=Sesion+4';">
+                    </a>
+                </div>
+                <!-- Unit 3 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm hover:shadow-md interactive-img">
+                    <img src="https://usil.instructure.com/courses/59080/files/10731108/preview" alt="Unidad 3" class="w-full h-auto mb-4 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/400x69/cccccc/333333?text=Unidad+3';">
+                    <a href="https://usil.instructure.com/courses/59080/pages/sesion-5-semana-9-10-y-11-utility-utilidad" title="Sesión 5 - Semana 9, 10 y 11" class="text-indigo-700 font-semibold text-lg hover:underline interactive-link">
+                        <img src="https://usil.instructure.com/courses/59080/files/10731143/preview" alt="Sesión 5" class="w-full h-auto rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/320x56/cccccc/333333?text=Sesion+5';">
+                    </a>
+                </div>
+                <!-- Unit 4 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm hover:shadow-md interactive-img">
+                    <img src="https://usil.instructure.com/courses/59080/files/10731174/preview" alt="Unidad 4" class="w-full h-auto mb-4 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/400x69/cccccc/333333?text=Unidad+4';">
+                    <a href="https://usil.instructure.com/courses/59080/pages/sesion-6-semana-12-y-13-utility-utilidad" title="Sesión 6 - Semana 12 y 13" class="text-indigo-700 font-semibold text-lg hover:underline interactive-link">
+                        <img src="https://usil.instructure.com/courses/59080/files/10731181/preview" alt="Sesión 6" class="w-full h-auto rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/320x56/cccccc/333333?text=Sesion+6';">
+                    </a>
+                    <a href="https://usil.instructure.com/courses/59080/pages/sesion-7-semana-14-15-y-16-utility-utilidad" title="Sesión 7 - Semana 14, 15 y 16" class="text-indigo-700 font-semibold text-lg hover:underline interactive-link mt-2">
+                        <img src="https://usil.instructure.com/courses/59080/files/10731158/preview" alt="Semana 7" class="w-full h-auto rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/320x56/cccccc/333333?text=Sesion+7';">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-10 border-gray-300">
+
+        <!-- Group Work Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Trabajo en Grupo</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg shadow-md">
+                    <thead>
+                        <tr class="bg-indigo-100 text-indigo-900">
+                            <th class="py-3 px-4 text-left font-semibold rounded-tl-lg"></th>
+                            <th class="py-3 px-4 text-center font-semibold">Grupo 1</th>
+                            <th class="py-3 px-4 text-center font-semibold">Grupo 2</th>
+                            <th class="py-3 px-4 text-center font-semibold rounded-tr-lg">Grupo 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-3 px-4 font-bold text-indigo-800">Elaboración del PCI</td>
+                            <td class="py-3 px-4 text-center">
+                                <a href="https://docs.google.com/document/d/1I7V3mZPfbDvgYrBNlFOJuMrF1bmBg2oOBhXX0ns4_fc/edit?usp=sharing" target="_blank" rel="noopener" class="text-indigo-600 hover:text-indigo-800 hover:underline interactive-link table-link">Enlace</a>
+                            </td>
+                            <td class="py-3 px-4 text-center">
+                                <a href="https://docs.google.com/document/d/1bfwSG8U3eDGd-IdV-d8wJMjNarcopXF3UxSdkLavVMo/edit?usp=sharing" target="_blank" rel="noopener" class="text-indigo-600 hover:text-indigo-800 hover:underline interactive-link table-link">Enlace</a>
+                            </td>
+                            <td class="py-3 px-4 text-center">
+                                <a href="https://docs.google.com/document/d/1TTle9eQywWQgYl6-D4QxshnSTd-pJlmNQNt5txwKESc/edit?usp=sharing%20%20%20%20" target="_blank" rel="noopener" class="text-indigo-600 hover:text-indigo-800 hover:underline interactive-link table-link">Enlace</a>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-3 px-4 font-bold text-indigo-800">Elaboración del PCA</td>
+                            <td class="py-3 px-4 text-center">
+                                <span class="text-indigo-600">Enlace</span>
+                            </td>
+                            <td class="py-3 px-4 text-center">
+                                <span class="text-indigo-600">Enlace</span>
+                            </td>
+                            <td class="py-3 px-4 text-center">
+                                <span class="text-indigo-600">Enlace</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-bold text-indigo-800 rounded-bl-lg">Elaboración de la Unidad Didáctica</td>
+                            <td class="py-3 px-4 text-center">
+                                <span class="text-indigo-600">Enlace</span>
+                            </td>
+                            <td class="py-3 px-4 text-center">
+                                <span class="text-indigo-600">Enlace</span>
+                            </td>
+                            <td class="py-3 px-4 text-center rounded-br-lg">
+                                <span class="text-indigo-600">Enlace</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr class="my-10 border-gray-300">
+
+        <!-- Assessments Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Evaluaciones</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://usil.instructure.com/courses/59080/assignments/613920" title="Práctica N° 1" class="interactive-img block">
+                    <img src="https://usil.instructure.com/courses/59080/files/10731046/preview" alt="practica 1" class="max-w-full h-auto rounded-md" width="170" height="37" onerror="this.onerror=null;this.src='https://placehold.co/170x37/cccccc/333333?text=Practica+1';">
+                </a>
+                <a href="https://usil.instructure.com/courses/59080/assignments/613921" title="Práctica N° 2" class="interactive-img block">
+                    <img src="https://usil.instructure.com/courses/59080/files/10731043/preview" alt="practica 2" class="max-w-full h-auto rounded-md" width="178" height="39" onerror="this.onerror=null;this.src='https://placehold.co/178x39/cccccc/333333?text=Practica+2';">
+                </a>
+                <a href="https://usil.instructure.com/courses/59080/assignments/613922" title="Práctica N° 3" class="interactive-img block">
+                    <img src="https://usil.instructure.com/courses/59080/files/10731054/preview" alt="practica 3" class="max-w-full h-auto rounded-md" width="184" height="40" onerror="this.onerror=null;this.src='https://placehold.co/184x40/cccccc/333333?text=Practica+3';">
+                </a>
+                <a href="https://usil.instructure.com/courses/59080/assignments/613923" title="Práctica N° 4" class="interactive-img block">
+                    <img src="https://usil.instructure.com/courses/59080/files/10731055/preview" alt="practica 4" class="max-w-full h-auto rounded-md" width="197" height="43" onerror="this.onerror=null;this.src='https://placehold.co/197x43/cccccc/333333?text=Practica+4';">
+                </a>
+                <a href="https://usil.instructure.com/courses/59080/assignments/613918" title="Examen Final" class="interactive-img block">
+                    <img src="https://usil.instructure.com/courses/59080/files/10731056/preview" alt="Examen final" class="max-w-full h-auto rounded-md" width="170" height="37" onerror="this.onerror=null;this.src='https://placehold.co/170x37/cccccc/333333?text=Examen+Final';">
+                </a>
+                <a href="https://usil.instructure.com/courses/59080/assignments/613919" title="PRODUCTO ACREDITABLE" class="interactive-img block">
+                    <img src="https://usil.instructure.com/courses/59080/files/10731057/preview" alt="Producto acreditable" class="max-w-full h-auto rounded-md" width="170" height="37" onerror="this.onerror=null;this.src='https://placehold.co/170x37/cccccc/333333?text=Producto+Acreditable';">
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="text-center mt-12">
+            <img id="9804789" src="https://usil.instructure.com/courses/59080/files/10731072/preview" alt="footer-1" class="max-w-full h-auto mx-auto rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/800x50/cccccc/333333?text=Footer';">
+        </div>
+    </div>
+</body>
+</html>
